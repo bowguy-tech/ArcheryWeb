@@ -1,0 +1,87 @@
+:root {
+    --red:#98251E;
+    --orange:#E45932;
+    --yellow:#F3A93E;
+    --brown:#633C35;
+    --gray:#2C2626;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 0px;
+    background-color: var(--red);
+    color: var(--yellow);
+    border-bottom: solid 3px var(--brown);
+}
+
+button {
+    background-color: var(--orange);
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    a {
+        color: var(--yellow);
+        text-decoration: none;
+    }
+}
+
+.content {
+    display: flex;
+    margin: 0px 100px;
+}
+
+#links {
+    align-self: flex-end;
+    margin-left: auto;
+    display: flex;
+    column-gap: 20px;
+}
+
+h1,h2,h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#about-us {
+    background-color: var(--red);
+    border-top:solid 3px var(--brown);
+}
+
+#our-facilities {
+    background-color: var(--brown);
+    border-top:solid 3px var(--orange);
+    border-bottom:solid 3px var(--orange);
+}
+
+#join {
+    background-color: var(--red);
+}
+
+#join-button {
+    margin: 50px auto;
+    width: 300px;
+    height: 80px;
+    border: solid 4px var(--brown);
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: var(--yellow);
+
+    a {
+        color: var(--brown);
+    }
+}
+
+footer {
+    height: 400px;
+    background-color: var(--gray);
+    color: white;
+    a {
+        color: white;
+    }
+}
