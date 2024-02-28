@@ -167,7 +167,8 @@ hr {
 
 footer {
     padding-top: 70px;
-    height: 250px;
+    padding-bottom: 30px;
+    min-height: 250px;
     background-color: var(--gray);
     color: white;
     a {
@@ -200,42 +201,103 @@ container_bac{
   
 .container {
     background-color: rgba(0, 0, 0, 0.685);
-    color: orange; /* Text color set to orange */
-    padding: 15px; /* Adjusted padding for a thinner appearance */
+    color: orange;  
+    padding: 15px;  
     border-radius: 10px;
-    width: 300px; /* Adjusted width for a smaller container */
-    margin: auto; /* Center the container on the page */
+    width: 300px;  
+    margin: auto;  
     text-align: center; 
     
    
 }
 
-/* Styling for the heading */
+#hamburger {
+    img {
+        width: 30px;
+    padding-top: 25px;
+    }
+    display: none;
+}
+
+#login-main {
+    background-image: url(/images/common/background.png);
+    height: 80vh;
+    
+}
+
+#course-main {
+    background-image: url(/images/courses/competion.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1600px;
+    background-position-y: center;
+    min-height: 600px;
+    display: flex;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.course {
+      min-width: 250px;
+      max-width: 300px;  
+      max-height: 400px;
+      padding: 20px;
+      border-radius: 50px;
+      margin: 50px auto;
+      font-size: larger;
+
+      p {
+        margin: 10px;
+      }
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.yellow {
+    background-color: #FFA800;
+}
+
+.red {
+    background-color: #FF1F00;
+}
+
+.center {
+    text-align: center;
+    font-size: 30px;
+}
+
+.lower {
+    margin-top: 100px;
+}
+
+
+ 
 .container h2 {
     
-    color: orange; /* Text color set to orange */
+    color: orange;  
 }
 
-/* Styling for the form controls */
+ 
 .container .form-control {
     background-color: #333;
-    color: orange; /* Text color set to orange */
+    color: orange;  
 }
 
-/* Styling for the submit button */
+ 
 .container .btn-primary {
     background-color: #007bff;
-    color: orange; /* Text color set to orange */
+    color: orange;  
 }
-        /* Styling for the form controls */
+         
         .container .form-control {
             background-color: #33333398;
             
-            margin-bottom: 10px; /* Add margin to space out the inputs */
-            border: 1px solid #55555593; /* Add border for better visibility */
-            border-radius: 50px; /* Add border-radius for a rounded appearance */
-            padding: 16px; /* Add padding for better spacing within the inputs */
-            box-sizing: border-box; /* Include padding and border in the width */
+            margin-bottom: 10px;  
+            border: 1px solid #55555593;  
+            border-radius: 50px;  
+            padding: 16px;  
+            box-sizing: border-box;  
         
             
         }
@@ -243,16 +305,42 @@ container_bac{
             color: orange;
         }
         .container .form-control::placeholder {
-            color: orange; /* Text color set to orange */
+            color: orange;  
         }
         .container .btn-primary {
             border-color: #000;
             background-color: black;
-            color: orange; /* Text color set to orange */
+            color: orange;  
         }
-.wrapper{height: 400px;}
-@media (min-width: 768px) {
+       
+
+        @media screen and (max-width: 1300px) {
+            .lower {
+                    margin-top: 50px;
+                } 
+                        
+            } 
+
+@media (max-width: 768px) {
     .container {
-        width: 400px; /* Adjusted maximum width for larger screens */
+        width: 400px;  
+    }
+
+    #hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #course-main {
+        flex-direction: column;
+    } 
+
+    .orange, .red, .yellow {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFA800;
     }
 }
