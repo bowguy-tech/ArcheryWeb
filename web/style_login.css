@@ -61,20 +61,8 @@ button {
     }
 }
 
-#welcome {
-    background-image: url("../images/common/background.png");
-    min-height: 40vh;
-    padding-top: 25vh;
-    padding-bottom: 20vh;
-}
 
-#h1-shade {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    margin-left: 50px;
-    padding-left: 10px;
-    max-width: 1000px;
-}
+
 
 h1 {
     font-size: 70px;
@@ -96,10 +84,7 @@ h1 {
     column-gap: 25px;
 }
 
-#about-us {
-    background-color: var(--red);
-    border-top:solid 3px var(--brown);
-}
+
 
 hr {
     color: var(--yellow);
@@ -117,59 +102,20 @@ hr {
         font-size: 50px;
     }
 
-    #line {
-        height: 3px;
-        background-color: var(--yellow);
-        margin-bottom: 50px;
-    }
+  
     
 }
 
-#about-text {
-    background-color: var(--orange);
+#welcome {
+    background-image: url("../images/common/background.png");
+    min-height: 40vh;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
 }
 
-.image {
-    width: 600px;   
-    padding: 50px;
-    height: auto;
-    border-radius: 15px;
-    img {
-        width: 600px;
-        border-radius: 15px;
-    }
-}
 
-#about-image-box {
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
-#our-facilities {
-    background-color: var(--brown);
-    border-top:solid 3px var(--orange);
-    border-bottom:solid 3px var(--orange);
-}
 
-#join {
-    background-color: var(--red);
-    height: 300px;
-    text-align: center;
-}
-
-#join-button {
-    margin-top: 100px;
-    width: 600px;
-    height: 160px;
-    border: solid 4px var(--brown);
-    border-radius: 25px;
-    font-size: 60px;
-    font-weight: 500;
-    background-color: var(--yellow);
-
-    a {
-        color: var(--brown);
-    }
-}
 
 footer {
     padding-top: 70px;
@@ -179,6 +125,7 @@ footer {
     a {
         color: white;
     }
+    align-self: flex-end;
 }
 
 
@@ -259,7 +206,10 @@ container_bac{
         }
 .wrapper{height: 400px;}
 @media (min-width: 768px) {
-    .container {
-        width: 400px; /* Adjusted maximum width for larger screens */
+  
+    .container .form-control {
+       
+        
     }
+
 }
