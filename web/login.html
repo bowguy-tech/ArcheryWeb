@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <title>Bullseye Archery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     
@@ -20,10 +23,35 @@
     </header>
     <main>
         <div id="welcome">
-            <div id="h1-shade">
-                <h1>Your archery journey starts here</h1>
+          <div class="wrapper">
+            <div class="container mt-3">
+                <h2>Sign up</h2>
+                <form action="/action_page.php">
+                  <div class="mb-3 mt-3">
+                    
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                  </div>
+                  <div class="mb-3">
+                   
+                    <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+                 
+                </div>
+                <div class="mb-3">
+                   
+                    <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+                 
+                </div>
+                  <div class="form-check mb-3">
+                    <p>Already a member? <a href="">Login</a></p>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+               
             </div>
+          </div>
         </div>
+
     </main>
     <footer>
         <p>Adress: 456 Target Street, Imaginary City, State 12345</p>
@@ -32,8 +60,8 @@
         <p>Monday to friday: 10:00 AM - 7:00 PM</p>
         <p>Saturday: 9:00 - 5:00 PM</p>
         <p>Sunday: Closed</p>
-        
+        <p>Sunday: Closed</p>
     </footer>
-    <a href="index.html">back</a>
+   
 </body>
 </html>

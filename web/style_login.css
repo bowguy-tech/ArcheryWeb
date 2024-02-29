@@ -1,3 +1,9 @@
+
+
+
+
+
+
 :root {
     --red:#98251E;
     --orange:#E45932;
@@ -174,12 +180,13 @@ footer {
         color: white;
     }
 }
-body{background: #000}
 
-.card{border: 2px solid #000;
-    height: 320px;
-    
-}
+
+
+
+
+
+
 .forms-inputs{position: relative}
 .forms-inputs span{position: absolute;
     top:-18px;left: 10px;
