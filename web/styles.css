@@ -9,11 +9,16 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--red);
 }
 
 h1,h2,h3 {
     margin: 0px;
     padding: 0px;
+}
+
+a > button{
+    color: var(--yellow);
 }
 
 header {
@@ -55,18 +60,26 @@ button {
     }
 }
 
+.content {
+    margin: 0px;
+    min-height: 300px;
+}
+
 #welcome {
     background-image: url("../images/common/background.png");
-    min-height: 40vh;
-    padding-top: 25vh;
-    padding-bottom: 20vh;
+    height: 20vw;
+    min-height: 350px;
+    padding: 0px 60px;
+    padding-top: 10vw;
+    padding-bottom: 18vh;
+    border-bottom: solid 5px var(--brown);
+    
 }
 
 #h1-shade {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    margin-left: 50px;
-    padding-left: 10px;
+    margin: 0px auto;
     max-width: 1000px;
 }
 
@@ -77,106 +90,109 @@ h1 {
     -webkit-text-stroke: 2px var(--brown);
 }
 
-.content {
-    display: flex;
-    padding:50px 50px;
-    gap: 100px;
-}
-
 #links {
-    align-self: flex-end;
+        align-self: flex-end;
     margin-left: auto;
     display: flex;
-    column-gap: 25px;
+    gap: 2vw;
+}
+
+.box {
+    display: flex;
+    margin: 100px auto;
+    padding: 0px 60px;
+    max-height: 450px;
+}
+
+.text { 
+    background-color: var(--orange);
+    margin: 0px auto;
+    padding: 3%;
+    border-radius: 30px;
+    min-width: 200px;
+    max-width: 30%;
+    color: var(--yellow);
+    text-align: center;
+    h3 {
+        font-size: 40px;
+    }
+
+    div {
+        background-color: var(--yellow);
+        margin: 0px auto;
+        width: 95%;
+        height: 3px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+}
+
+.img {
+    max-width: 40%;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 3%;
+    img {
+        max-height: 90%;
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 30px;
+    }
 }
 
 #about-us {
     background-color: var(--red);
-    border-top:solid 3px var(--brown);
-}
-
-hr {
-    color: var(--yellow);
-}
-
-.text {
-    width: 600px;
-    height: 400px;
-    padding: 20px 60px;
-    border-radius: 20px;
-    color: var(--yellow);
-
-    text-align: center;
-    h3 {
-        font-size: 50px;
-    }
-
-    #line {
-        height: 3px;
-        background-color: var(--yellow);
-        margin-bottom: 50px;
-    }
-    
-}
-
-#about-text {
-    background-color: var(--orange);
-}
-
-.image {
-    width: 600px;   
-    padding: 50px;
-    height: auto;
-    border-radius: 15px;
-    img {
-        width: 600px;
-        border-radius: 15px;
-    }
-}
-
-#about-image-box {
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #our-facilities {
     background-color: var(--brown);
-    border-top:solid 3px var(--orange);
-    border-bottom:solid 3px var(--orange);
-}
-
-#join {
-    background-color: var(--red);
-    height: 300px;
-    text-align: center;
-}
-
-#join-button {
-    margin-top: 100px;
-    width: 600px;
-    height: 160px;
-    border: solid 4px var(--brown);
-    border-radius: 25px;
-    font-size: 60px;
-    font-weight: 500;
-    background-color: var(--yellow);
-
-    a {
-        color: var(--brown);
+    border-top: solid var(--orange) 4px;
+    border-bottom: solid var(--orange) 4px;
+    .box {
+        .text {
+            background-color: var(--brown);
+        }
+        flex-direction: row-reverse;
     }
 }
 
+#join {
+    min-width: 50%;
+    margin: 0px auto;
+    padding: 0px 20px;
+    
+}
+#join-button {
+    height: 200px;
+    width: 100%;
+    background-color: var(--yellow);
+    border: solid var(--brown) 8px;
+    border-radius: 50px;
+    color: var(--brown);
+    font-size: 64px;
+}
+
 footer {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    min-height: 250px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    min-height: 200px;
     background-color: var(--gray);
     color: white;
     a {
         color: white;
     }
 }
-body{background: #000}
 
+.login-back {
+    background-image: url("../images/common/background.png");
+    padding-top: 100px;
+    min-height: 600px;
+}
 .card{border: 2px solid #000;
     height: 320px;
     
@@ -198,7 +214,6 @@ container_bac{
 
 }
 
-  
 .container {
     background-color: rgba(0, 0, 0, 0.685);
     color: orange;  
@@ -207,8 +222,6 @@ container_bac{
     width: 300px;  
     margin: auto;  
     text-align: center; 
-    
-   
 }
 
 #hamburger {
@@ -314,12 +327,23 @@ container_bac{
         }
        
 
-        @media screen and (max-width: 1300px) {
-            .lower {
-                    margin-top: 50px;
-                } 
-                        
-            } 
+@media screen and (max-width: 1300px) {
+    .lower {
+        margin-top: 50px;
+    } 
+    
+    #our-facilities {
+        display: none;
+    }
+
+    #join {
+        margin-left: 0px;
+    }
+    #join-button {
+        width: 90%;
+        height: 120%;
+    }
+} 
 
 @media (max-width: 768px) {
     .container {
@@ -343,4 +367,35 @@ container_bac{
         background-color: rgba(0, 0, 0, 0.5);
         color: #FFA800;
     }
+
+    #mobile-hide {
+        display: none;
+    }
+
+    #about-us {
+        background-image: url(/images/main_page/archer.png);
+        .box {
+            margin: 0;
+            padding: 100px 0px;
+            .text {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .box {
+        display: block;
+    }
+
+    #our-facilities {
+        display: block;
+    }
+
+    .text {
+        max-width: 70%;
+        padding: 15%;
+        margin: 0px;
+        border-radius: 0px;
+    }
 }
+
